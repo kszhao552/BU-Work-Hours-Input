@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BU_Hous_Input", "BU_Hous_Input\BU_Hous_Input.pyproj", "{7204426E-7041-46F2-9EFB-D29B72426DF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7204426E-7041-46F2-9EFB-D29B72426DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7204426E-7041-46F2-9EFB-D29B72426DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2125F4BF-DF4F-4654-97E9-5AB9A13543F6}
+	EndGlobalSection
+EndGlobal
