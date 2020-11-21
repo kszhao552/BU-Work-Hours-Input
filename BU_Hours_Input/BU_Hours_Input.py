@@ -21,8 +21,10 @@ def login(driver):
     
     driver.switch_to.frame('duo_iframe')
     element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//div/div/div/div/form/div/fieldset/div/button')))
-    driver.find_element_by_xpath('//div/div/div/div/form/div/fieldset/div/button').click()
     element.click()
+    driver.find_element_by_xpath('//div/div/div/div/form/div/fieldset/div/button').click()
+    driver.switch_to.default_content()
+
     start = time.time()
     while True:
         if "Login" not in driver.title:
@@ -32,8 +34,12 @@ def login(driver):
             driver.close()
             sys.exit()
     
-    
+def goToInput(driver):
+    time.sleep(3)
+    driver.find_element_by_partial_link_text(config.title).click()
+    return
 
 driver = webdriver.Firefox()
 login(driver)
+goToInput(driver)
 driver.close()
