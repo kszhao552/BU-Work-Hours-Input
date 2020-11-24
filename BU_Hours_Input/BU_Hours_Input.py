@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select
 import time
 import config
 import sys
@@ -39,7 +40,20 @@ def goToInput(driver):
     driver.find_element_by_partial_link_text(config.title).click()
     return
 
+def inputHours(driver):
+    time.sleep(3)
+    elements = driver.find_elements_by_tag_name("select") 
+    
+    for i in range(7):
+        for j in range(6):
+            if config.hours[i][j] != '':
+                select = Select(elements[i*6 + j])
+                select.select_by_visible_text(config.hours[i][j])
+    
+
 driver = webdriver.Firefox()
 login(driver)
 goToInput(driver)
+inputHours(driver)
 driver.close()
+     
