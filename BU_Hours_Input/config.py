@@ -1,5 +1,5 @@
 username = "USERNAME"
-password = "PASSWORd!"
+password = "PASSWORD!"
 title = "JOB TITLE"
 
 hours = [
