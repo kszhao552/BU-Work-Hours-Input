@@ -1,13 +1,13 @@
-username = "kszhao"
-password = "RoboMen552!"
-title = "It Support Specialist"
+username = "USERNAME"
+password = "PASSWORd!"
+title = "JOB TITLE"
 
 hours = [
-     ['','','','','',''], #Monday
-     ['','','','','',''], #Tuesday
-     ['','','','','',''], #Wednesday
-     ['','','','','',''], #Thursday
-     ['','','','','',''], #Friday
-     ['','','','','',''], #Satudar
-     ['','','','','','']  #Sunday
+     ['9:00am','3:00pm', '', '', '', ''], #Monday
+     ['9:00am','3:00pm', '', '', '', ''], #Tuesday
+     ['9:00am','3:00pm', '', '', '', ''], #Wednesday
+     ['9:00am','3:00pm', '', '', '', ''], #Thursday
+     ['9:00am','3:00pm', '', '', '', ''], #Friday
+     ['9:00am','3:00pm', '', '', '', ''], #Satuday
+     ['9:00am','3:00pm', '', '', '', '']  #Sunday
     ]
