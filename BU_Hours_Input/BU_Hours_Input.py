@@ -50,10 +50,19 @@ def inputHours(driver):
                 select = Select(elements[i*6 + j])
                 select.select_by_visible_text(config.hours[i][j])
     
+def calculateHours(driver):
+    driver.find_element_by_xpath("//input[@value='Calculate Hours']").click() 
+    time.sleep(2)
+    driver.find_element_by_xpath("//input[@value='Y']").click()
+    element = driver.find_element_by_xpath("//input[@value='Save']")
+    element.send_keys(Keys.ENTER)
+    element.send_keys(Keys.ENTER)
+
 
 driver = webdriver.Firefox()
 login(driver)
 goToInput(driver)
 inputHours(driver)
+calculateHours(driver)
 driver.close()
      
