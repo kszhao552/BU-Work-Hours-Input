@@ -1,13 +1,13 @@
 username = "USERNAME"
-password = "PASSWORD!"
-title = "JOB TITLE"
+password = "PASSWORD"
+title = "POSITION"
 
 hours = [
-     ['9:00am','3:00pm', '', '', '', ''], #Monday
-     ['9:00am','3:00pm', '', '', '', ''], #Tuesday
-     ['9:00am','3:00pm', '', '', '', ''], #Wednesday
-     ['9:00am','3:00pm', '', '', '', ''], #Thursday
-     ['9:00am','3:00pm', '', '', '', ''], #Friday
-     ['9:00am','3:00pm', '', '', '', ''], #Satuday
-     ['9:00am','3:00pm', '', '', '', '']  #Sunday
+     ['9:00pm','3:00pm', '', '', '', ''], #Monday
+     ['9:00pm','3:00pm', '', '', '', ''], #Tuesday
+     ['9:00pm','3:00pm', '', '', '', ''], #Wednesday
+     ['9:00pm','3:00pm', '', '', '', ''], #Thursday
+     ['9:00pm','3:00pm', '', '', '', ''], #Friday
+     ['','', '', '', '', ''], #Satuday
+     ['','', '', '', '', '']  #Sunday
     ]

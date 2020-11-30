@@ -56,13 +56,16 @@ def calculateHours(driver):
     driver.find_element_by_xpath("//input[@value='Y']").click()
     element = driver.find_element_by_xpath("//input[@value='Save']")
     element.send_keys(Keys.ENTER)
-    element.send_keys(Keys.ENTER)
+    alert = driver.switch_to.alert
+    alert.accept()
 
 
 driver = webdriver.Firefox()
-login(driver)
-goToInput(driver)
-inputHours(driver)
-calculateHours(driver)
-driver.close()
+try:
+    login(driver)
+    goToInput(driver)
+    inputHours(driver)
+    calculateHours(driver)
+finally:
+    driver.close()
      
